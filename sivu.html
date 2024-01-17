@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Sivusto</h1>
+    <h3 id="paikka"></h3>
+    <button onclick="tervehdi()">Katso tervehdys</button>
+    </center>
+    <script>
+        //Muuttujat määritellään komennolla var. Näkyy globaalisti
+        // Ohjelmalohkon sisäinen muuttuja(tervehdys) ,määritellään let komennolla.
+        //Const on vakio.(arvon voi sijoittaa vain kerran)
+        function tervehdi(){
+        let tervehdys = "Tervetuloa sivulle!"
+        // alert(tervehdys)
+        document.getElementById("paikka").innerText=tervehdys
+        }
+    </script>
+</body>
+</html>
