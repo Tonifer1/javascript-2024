@@ -10,6 +10,9 @@ function palvelut(){
    document.getElementById("sisältö").innerHTML = palvelut
 }
 
+
+
+
 function yhteystiedot(){
     document.getElementById("sisältö").innerHTML="";
     var otsikko = document.createElement("h2");
@@ -34,6 +37,11 @@ function yhteystiedot(){
         document.getElementById("sivu").style.backgroundColor = "white";
         document.getElementById("sivu").style.color = "black";
         localStorage.setItem("teema", "vaalea")
+    }
+    function punainen(){
+        document.getElementById("sivu").style.backgroundColor = "red";
+        document.getElementById("sivu").style.color = "black";
+        localStorage.setItem("teema", "punainen")
     }
     if (localStorage.getItem("teema") == "tumma"){
         tumma()

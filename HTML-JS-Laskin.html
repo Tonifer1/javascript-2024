@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-laskin</title>
+</head>
+<html>
+    <body>
+        <h1>Laskin</h1>
+        <!--formin sisään rakennettu -->
+        <form name="calculator">
+            Luku1: <input type="text" name="numero1"><br>
+            Luku2: <input type="text" name="numero2"><br>
+            Luku3: <input type="text" name="numero3"><br>
+            Tulos     : <input type="text" name="tulos"><br>
+
+            <!--alla kunkin laskukaavojen funktioiden kutsut buttonin kautta-->
+            <input type="button" value="Summa" onclick="summa()">
+            <input type="button" value="Erotus" onclick="erotus()">
+            <input type="button" value="Tulo" onclick="tulo()">
+            <input type="button" value="Jako" onclick="jako()">
+            <input type="button" value="Tyhjennä" onclick="tyhjenna()"><br>
+
+        </form>
+        <script>
+            n1=0, n2=0,n3=0, t=0;
+            function summa() {
+                /*summa funktio*/
+                n1=Number(document.calculator.numero1.value);
+                n2=Number(document.calculator.numero2.value);
+                n3=Number(document.calculator.numero3.value);
+                /*alla kuvataan summaaminen*/
+                t=n1+n2+n3;
+                /*document sanalla viitataan tähän kyseiseen web sivuun*/
+                document.calculator.tulos.value=t;
+            }
+            function erotus() {
+                /*erotus funktio*/
+                n1=Number(document.calculator.numero1.value);
+                n2=Number(document.calculator.numero2.value);
+                n3=Number(document.calculator.numero3.value);
+                /*alla kuvataan erotus*/
+                t=n1-n2-n3;
+                document.calculator.tulos.value=t;
+            }
+
+            function tulo() {
+                /*tulo funktio*/
+                n1=Number(document.calculator.numero1.value);
+                n2=Number(document.calculator.numero2.value);
+                n3=Number(document.calculator.numero3.value);
+                t=n1*n2*n3;
+                document.calculator.tulos.value=t;
+            }
+
+            function jako() {
+                /*jako funktio*/
+                n1=Number(document.calculator.numero1.value);
+                n2=Number(document.calculator.numero2.value);
+                n3=Number(document.calculator.numero3.value);
+                t=n1/n2;
+                document.calculator.tulos.value=t;
+            }
+
+            function tyhjenna() {
+                /*tyhjenna funktio*/
+                document.calculator.tulos.value="";
+                document.calculator.numero1.value="";
+                document.calculator.numero2.value="";
+                document.calculator.numero3.value="";
+            }
+
+        </script>
+    </body>
+</html>

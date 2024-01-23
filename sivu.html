@@ -6,21 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="sivu" style="min-height : 800px">
+    <div id="sivu" style="min-height : 900px">
         <center>
-        <h1>Eläinhoitola</h1>
+        <h1>Eläinhoitola</h1>        
         <h3 id="paikka"></h3>
+        <!-- <h1>Tervetuloa sivuille</h1> -->
 
         <button onclick="tervehdi()">Katso tervehdys</button>
         <button onclick="palvelut()">Palvelumme</button>
         <button onclick="yhteystiedot()">Yhteystiedot</button>
         <button onclick="tumma()">Tumma teema</button>
         <button onclick="vaalea()">Vaalea teema</button>
+        <button onclick="punainen()">Punainen teema</button>
 
         <div id = "sisältö"</div>  
 
         </center>
     </div>
+    <!-- scriptit pääohjelmassa yleensä alussa tai lopussa -->
     <script src="sivu.js"></script>
 
     
@@ -30,7 +33,8 @@
         //Const on vakio.(arvon voi sijoittaa vain kerran)
         function tervehdi(){
         let tervehdys = "Tervetuloa sivulle!"
-        // alert(tervehdys)
+        //alertilla voidaan debugata
+         //alert(tervehdys)
         document.getElementById("paikka").innerText=tervehdys
         }
     </script>

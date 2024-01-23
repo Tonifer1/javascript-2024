@@ -1,7 +1,7 @@
 let numerot
 var i=10;
 do{
-    numerot = "Do While Numero on: " +  (1+i);
+    numerot = "Do While Numero on: " +  (i+1);
     console.log(numerot);
     i++
 }
