@@ -35,7 +35,7 @@ var autot = [
           console.log("Mallia ei löydy")
         }
       
-    }
+    }  //node .\muuttujat.js
   } )
 
 
