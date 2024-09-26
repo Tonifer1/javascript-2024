@@ -1,4 +1,4 @@
-let numerot
+var numerot
 var i=10;
 do{
     numerot = "Do While Numero on: " +  (i+1);
